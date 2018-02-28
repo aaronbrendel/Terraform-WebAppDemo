@@ -27,6 +27,6 @@ echo "Setting ownership on /var/www"
 chown -R www-data:www-data /var/www
 
 #Downloading demo.php file
-wget https://github.com//aaronbrendel/Terraform-WebAppDemo/scripts/webappdemo.php -O /var/www/html/demo.php
+wget https://raw.githubusercontent.com/aaronbrendel/Terraform-WebAppDemo/master/scripts/webappdemo.php -O /var/www/html/demo.php
 #sudo chown -R www-data:www-data /var/www/html/demo.php
 chown -R www-data:www-data /var/www/html/demo.php
