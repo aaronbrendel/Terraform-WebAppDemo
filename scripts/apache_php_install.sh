@@ -4,7 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 #Update packages and Upgrade system
 echo "Updating System"
 #sudo apt-get -y update && sudo apt-get -y upgrade
-apt-get -y update && sudo apt-get -y upgrade
+apt-get -y update && apt-get -y upgrade
 
 echo "Installing Apache2"
 #sudo apt-get -y install apache2
