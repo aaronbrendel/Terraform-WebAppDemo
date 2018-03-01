@@ -1,6 +1,9 @@
 #!/bin/bash
 export DEBIAN_FRONTEND=noninteractive
 
+#Troubleshooting - touch file in / to confirm script is executing
+sudo touch /extension.script.started.log
+
 #Update packages and Upgrade system
 echo "Updating System"
 sudo apt-get -y update && sudo apt-get -y upgrade
