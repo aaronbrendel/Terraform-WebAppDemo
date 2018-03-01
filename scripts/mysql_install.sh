@@ -1,6 +1,10 @@
 #!/bin/bash
-apt-get update -y
-apt-get install -y expect
+
+#Troubleshooting - touch file in / to confirm script is executing
+sudo touch /extension.script.started.log
+
+sudo apt-get update -y
+sudo apt-get install -y expect
 export DEBIAN_FRONTEND=noninteractive
 sudo -E apt-get -q -y install mysql-server
 
@@ -28,5 +32,5 @@ expect eof
 ")
 
 echo "$SECURE_MYSQL"
-mysql -u root -p root -e "CREATE DATABASE test;"
-apt-get purge -y expect
+sudo mysql -u root -p root -e "CREATE DATABASE test;"
+sudo apt-get purge -y expect
