@@ -1,7 +1,7 @@
 <?php
    if( $_POST["name"]  ) {
    	$name = $_POST["name"];
-   	$servername = "localhost";
+   	$servername = "ubuntudb";
 	$username = "root";
 	$password = "root";
 	$dbname = "test";
